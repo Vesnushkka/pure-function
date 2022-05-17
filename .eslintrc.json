@@ -12,10 +12,15 @@
         "sourceType": "module"
     },
     "rules": {
-        "no-tabs": ["error", { "allowIndentationTabs": true }],
+        "indent": ["error", 4],
         "linebreak-style": ["error", "unix"],
-        "quotes": ["error", "single"],
         "semi": ["error", "always"],
-        "max-len": "off"
+        "max-len": "off",
+        "no-else-return": {"allowElseIf": true},
+        "no-restricted-syntax": [
+            "error",
+            "LabeledStatement",
+            "WithStatement"
+          ]
     }
 }
